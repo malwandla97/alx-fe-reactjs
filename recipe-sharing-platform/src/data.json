@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "title": "Spaghetti Carbonara",
+    "summary": "A classic Italian pasta dish with eggs, cheese, bacon, and black pepper.",
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 2,
+    "title": "Chicken Tikka Masala",
+    "summary": "Chunks of grilled chicken cooked in a smooth buttery & creamy tomato-based gravy.",
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 3,
+    "title": "Vegetable Stir Fry",
+    "summary": "A quick and easy stir fry with fresh vegetables and savory sauce.",
+    "image": "https://via.placeholder.com/150"
+  },
+
+
+    {
+      "id": 4,
+      "title": "Spaghetti Carbonara",
+      "summary": "A classic Italian pasta dish with eggs, cheese, bacon, and black pepper.",
+      "image": "https://via.placeholder.com/150",
+      "ingredients": ["Spaghetti", "Eggs", "Cheese", "Bacon", "Black Pepper"],
+      "instructions": "Boil spaghetti. Mix eggs and cheese. Cook bacon. Combine all with spaghetti and season with black pepper."
+    },
+    {
+      "id": 5,
+      "title": "Chicken Tikka Masala",
+      "summary": "Chunks of grilled chicken cooked in a smooth buttery & creamy tomato-based gravy.",
+      "image": "https://via.placeholder.com/150",
+      "ingredients": ["Chicken", "Tomato Sauce", "Cream", "Spices", "Butter"],
+      "instructions": "Marinate chicken. Grill until tender. Prepare gravy with tomato sauce, cream, and spices. Add chicken to gravy and simmer."
+    },
+    {
+      "id": 6,
+      "title": "Vegetable Stir Fry",
+      "summary": "A quick and easy stir fry with fresh vegetables and savory sauce.",
+      "image": "https://via.placeholder.com/150",
+      "ingredients": ["Mixed Vegetables", "Soy Sauce", "Garlic", "Ginger", "Oil"],
+      "instructions": "Heat oil in a pan. Add garlic and ginger. Stir fry vegetables. Add soy sauce and mix well."
+    }
+  ]
+  
