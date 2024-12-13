@@ -1,5 +1,5 @@
-// src/components/Search.jsx
 
+//"Looks like we cant find the user"]
 import { useState } from 'react';
 import githubService from '../services/githubService'; // Make sure you import your service for API calls
 
