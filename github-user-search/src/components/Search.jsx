@@ -1,33 +1,33 @@
-
+// src/components/Search.jsx
 
 import { useState } from 'react';
-import githubService from '../services/githubService';
+import githubService from '../services/githubService'; // Make sure you import your service for API calls
 
 const Search = () => {
-  // Define states for the search term, user data, and loading/error states
+  // States to handle the search input, user data, loading, and error
   const [username, setUsername] = useState('');
   const [userData, setUserData] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
-  // Handle form submission and API call
+  // Function to handle the form submission and make the API request
   const handleSearch = async (e) => {
     e.preventDefault();
-    setLoading(true);
-    setError(null);
-    setUserData(null);  // Reset previous search results
+    setLoading(true); // Set loading state to true while waiting for the API response
+    setError(null);   // Reset any previous errors
+    setUserData(null); // Reset previous user data
 
     try {
       const result = await githubService.fetchUserData(username);
       if (result && result.length > 0) {
-        setUserData(result[0]); // Assuming you are displaying the first result
+        setUserData(result[0]); // Assuming we show the first user if multiple are found
       } else {
         setError("Looks like we can't find the user");
       }
     } catch (err) {
       setError("An error occurred while fetching the user data.");
     } finally {
-      setLoading(false);
+      setLoading(false); // Set loading state to false once the request is complete
     }
   };
 
@@ -49,9 +49,9 @@ const Search = () => {
         </button>
       </form>
 
-      {loading && <p>Loading...</p>}
+      {loading && <p>Loading...</p>}  {/* Display loading state */}
 
-      {error && <p className="text-red-500">{error}</p>}
+      {error && <p className="text-red-500">{error}</p>} {/* Display error message */}
 
       {userData && !loading && !error && (
         <div className="user-info">
@@ -70,5 +70,4 @@ const Search = () => {
 };
 
 export default Search;
-
 
